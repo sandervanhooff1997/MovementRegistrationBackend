@@ -1,6 +1,6 @@
 package services;
 
-import models.Cartracker;
+import models.CarTracker;
 import repositories.CartrackerRepository;
 
 import javax.ejb.EJB;
@@ -12,7 +12,7 @@ public class CartrackerService {
     @EJB
     private CartrackerRepository cartrackerRepository;
 
-    public void createCartracker(Cartracker cartracker) {
+    public void createCartracker(CarTracker cartracker) {
         cartrackerRepository.createCartracker(cartracker);
     }
 }

@@ -1,27 +1,37 @@
 package models;
 
 import javax.persistence.*;
+import java.awt.geom.Point2D;
+import java.util.Date;
 
 @Entity
 @Table(name = "movements")
 public class Movement {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String serialNumber;
 
+    private String address;
+
+    private Point2D.Double coordinate;
+
+    private String authCode;
+
+    private Date date;
+
     @ManyToOne
-    private Cartracker cartracker;
+    private CarTracker carTracker;
+
 
     public Movement() {
-
     }
 
-    public Movement(String serialNumber, Cartracker cartracker) {
+    public Movement(String serialNumber, CarTracker carTracker) {
         this.serialNumber = serialNumber;
-        this.cartracker = cartracker;
+        this.carTracker = carTracker;
     }
 
     public Movement(String serialNumber) {
@@ -44,12 +54,44 @@ public class Movement {
         this.serialNumber = serialNumber;
     }
 
-    public Cartracker getCartracker() {
-        return cartracker;
+    public CarTracker getCarTracker() {
+        return carTracker;
     }
 
-    public void setCartracker(Cartracker cartracker) {
-        this.cartracker = cartracker;
+    public void setCarTracker(CarTracker carTracker) {
+        this.carTracker = carTracker;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public Point2D.Double getCoordinate() {
+        return coordinate;
+    }
+
+    public void setCoordinate(Point2D.Double coordinate) {
+        this.coordinate = coordinate;
+    }
+
+    public String getAuthCode() {
+        return authCode;
+    }
+
+    public void setAuthCode(String authCode) {
+        this.authCode = authCode;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
     }
 
     @Override
@@ -57,7 +99,8 @@ public class Movement {
         return "Movement{" +
                 "id=" + id +
                 ", serialNumber='" + serialNumber + '\'' +
-                ", cartracker=" + cartracker +
+                ", cartracker=" + carTracker +
+                ", date=" + date +
                 '}';
     }
 }

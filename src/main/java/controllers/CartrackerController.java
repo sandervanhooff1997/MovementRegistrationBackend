@@ -1,6 +1,6 @@
 package controllers;
 
-import models.Cartracker;
+import models.CarTracker;
 import services.CartrackerService;
 
 import javax.ejb.EJB;
@@ -18,7 +18,7 @@ public class CartrackerController {
     @POST
     @Consumes("application/json")
     @Produces("application/json")
-    public void createCartracker(Cartracker cartracker) {
+    public void createCartracker(CarTracker cartracker) {
         cartrackerService.createCartracker(cartracker);
     }
 }

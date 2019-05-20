@@ -1,6 +1,6 @@
 package repositories;
 
-import models.Cartracker;
+import models.CarTracker;
 
 import javax.ejb.Local;
 import javax.ejb.Stateless;
@@ -9,7 +9,7 @@ import javax.ejb.Stateless;
 @Stateless
 public class CartrackerRepository extends BaseRepo {
 
-    public void createCartracker(Cartracker cartracker) {
+    public void createCartracker(CarTracker cartracker) {
         try {
             em.persist(cartracker);
         } catch (Exception ex) {
