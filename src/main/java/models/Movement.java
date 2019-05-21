@@ -94,13 +94,17 @@ public class Movement {
         this.date = date;
     }
 
+
     @Override
     public String toString() {
         return "Movement{" +
                 "id=" + id +
                 ", serialNumber='" + serialNumber + '\'' +
-                ", cartracker=" + carTracker +
+                ", address='" + address + '\'' +
+                ", coordinate=" + coordinate +
+                ", authCode='" + authCode + '\'' +
                 ", date=" + date +
+                ", carTracker=" + carTracker +
                 '}';
     }
 }

@@ -40,7 +40,7 @@ public class MovementController {
         Date begin = refactorDate(start);
         Date stop = refactorDate(end);
         List<Movement> movements = null;
-        
+
         if (begin != null && stop != null)
             movements = movementService.getMovementsByPeriod(begin, stop);
 

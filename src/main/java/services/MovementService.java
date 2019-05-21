@@ -5,10 +5,9 @@ import repositories.MovementRepository;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.List;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.util.*;
 
 @Stateless
 public class MovementService {
@@ -18,6 +17,7 @@ public class MovementService {
 
     public void saveMovements(List<Movement> movements) {
         for (Movement m : movements) {
+            logMovement(m);
             if (checkAuthcode(m))
                 movementRepository.saveMovements(m);
         }
@@ -38,6 +38,8 @@ public class MovementService {
         for (Movement m : movements){
             list.add(Integer.parseInt(m.getSerialNumber()));
         }
+
+        list.sort(Comparator.naturalOrder());
 
         HashSet<Integer> set = new HashSet<>();
         for (int i = list.get(0); i < list.get(list.size() - 1); i++) {
@@ -69,5 +71,19 @@ public class MovementService {
 
     public List<Movement> getMovementsByPeriod(Date start, Date end) {
         return movementRepository.getMovementsByPeriod(start, end);
+    }
+
+    public void logMovement(Movement m){
+        try{
+            // Create file
+            FileWriter fstream = new FileWriter("D:\\log.txt", true);
+            BufferedWriter out = new BufferedWriter(fstream);
+            out.newLine();
+            out.write(new Date() + " " + m.toString() +"\n");
+            //Close the output stream
+            out.close();
+        }catch (Exception e){//Catch exception if any
+            System.err.println("Error: " + e.getMessage());
+        }
     }
 }

@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-@Local
 @Stateless
 public class MovementRepository extends BaseRepo {
 
