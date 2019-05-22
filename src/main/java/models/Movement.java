@@ -22,16 +22,15 @@ public class Movement {
 
     private Date date;
 
-    @ManyToOne
-    private CarTracker carTracker;
+    private Long carTracker_id;
 
 
     public Movement() {
     }
 
-    public Movement(String serialNumber, CarTracker carTracker) {
+    public Movement(String serialNumber, Long carTracker) {
         this.serialNumber = serialNumber;
-        this.carTracker = carTracker;
+        this.carTracker_id = carTracker;
     }
 
     public Movement(String serialNumber) {
@@ -52,14 +51,6 @@ public class Movement {
 
     public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
-    }
-
-    public CarTracker getCarTracker() {
-        return carTracker;
-    }
-
-    public void setCarTracker(CarTracker carTracker) {
-        this.carTracker = carTracker;
     }
 
     public String getAddress() {
@@ -94,6 +85,13 @@ public class Movement {
         this.date = date;
     }
 
+    public Long getCarTracker_id() {
+        return carTracker_id;
+    }
+
+    public void setCarTracker_id(Long carTracker_id) {
+        this.carTracker_id = carTracker_id;
+    }
 
     @Override
     public String toString() {
@@ -104,7 +102,7 @@ public class Movement {
                 ", coordinate=" + coordinate +
                 ", authCode='" + authCode + '\'' +
                 ", date=" + date +
-                ", carTracker=" + carTracker +
+                ", carTracker=" + carTracker_id +
                 '}';
     }
 }

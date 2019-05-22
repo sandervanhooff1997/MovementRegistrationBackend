@@ -11,10 +11,6 @@ O
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 T
 $src/main/java/models/Cartracker.java,d\5\d56eadd5bfe52c2d729060d0f2c2b17186c3bcb3
-M
-src/main/java/models/Log.java,8\2\82077a3676126e2fc93ce29bdf8376fe43b32d2c
-P
- src/main/java/models/Logger.java,4\7\47a2c1ff07107e321712272af524e465f564e8f5
 R
 "src/main/java/models/Movement.java,e\e\eed062f755bef0221d26c22cfad1b825566ee893
 c

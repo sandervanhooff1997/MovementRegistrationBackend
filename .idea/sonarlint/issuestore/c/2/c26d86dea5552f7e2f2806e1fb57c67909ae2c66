@@ -1,11 +1,10 @@
 
 V
-squid:S106"9Replace this use of System.out or System.err by a logger.(Î›òí8Ô×²¹«-
-9squid:S3626"Remove this redundant jump.(ÉŠ©ƒ8ÏÚ¾¹«-
+squid:S106 "9Replace this use of System.out or System.err by a logger.(¼õ€8 êÏ­-
+jsquid:S2095P"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ë·è¹8 êÏ­-
+V
+squid:S106V"9Replace this use of System.out or System.err by a logger.(˜ŸÚá8 êÏ­-
+fsquid:S2095O"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(Ô˜ö8 êÏ­-
 U
-squid:S106"9Replace this use of System.out or System.err by a logger.(ûıæ%8öÆÚÑ«-
-U
-squid:S1066"9Replace this use of System.out or System.err by a logger.(ç¢z8€«µ¹«-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(º¸çáøÿÿÿÿ8Ô×²¹«-
-Tsquid:S17517"6Remove this "return" statement or make it conditional.(§¼Éç8€«µ¹«-
+squid:S1066"9Replace this use of System.out or System.err by a logger.(ç¢z8 êÏ­-
+dsquid:S1126:"AReplace this if-then-else statement by a single return statement.(²—™Èşÿÿÿÿ8 êÏ­-

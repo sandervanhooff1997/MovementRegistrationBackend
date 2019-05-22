@@ -1,7 +1,5 @@
 package controllers;
 
-
-import models.CarTracker;
 import models.Movement;
 import services.MovementService;
 
@@ -33,10 +31,18 @@ public class MovementController {
         List<Movement> movements = movementService.getMovementsByCartracker(id);
         return Response.ok(movements).build();
     }
+
+    @GET
+    @Path("/test")
+    @Consumes("application/json")
+    public Response getTest(){
+        return Response.ok("Hello AJAX AMSTERDAM").build();
+    }
+
     @GET
     @Path("/{start}/{end}")
     @Consumes("application/json")
-    public Response getById(@PathParam("start") String start, @PathParam("end") String end){
+    public Response getByPeriod(@PathParam("start") String start, @PathParam("end") String end){
         Date begin = refactorDate(start);
         Date stop = refactorDate(end);
         List<Movement> movements = null;
