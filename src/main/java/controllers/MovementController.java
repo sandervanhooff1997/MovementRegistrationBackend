@@ -33,10 +33,19 @@ public class MovementController {
     }
 
     @GET
+    @Path("/month/{monthIndex}")
+    @Consumes("application/json")
+    public Response getByMonth(@PathParam("monthIndex") Long monthIndex){
+        List<Movement> movements = movementService.getMovementsByMonth(monthIndex);
+        return Response.ok(movements).build();
+    }
+
+
+    @GET
     @Path("/test")
     @Consumes("application/json")
     public Response getTest(){
-        return Response.ok("Hello update").build();
+        return Response.ok("Hello Month").build();
     }
 
     @GET

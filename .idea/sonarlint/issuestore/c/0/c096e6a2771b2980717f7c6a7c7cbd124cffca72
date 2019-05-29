@@ -1,9 +1,9 @@
 
-hsquid:CommentedOutCodeLineF"<This block of commented-out lines of code should be removed.(ÏÏ·#8š½Ò­-
-nsquid:CommentedOutCodeLineO"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8š½Ò­-
+nsquid:CommentedOutCodeLineX"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8š½Ò­-
+hsquid:CommentedOutCodeLineO"<This block of commented-out lines of code should be removed.(ÏÏ·#8š½Ò­-
 [
-squid:S106<"9Replace this use of System.out or System.err by a logger.(úùê–ûÿÿÿÿ8‘¡àÑ­-
-Fsquid:S1148X"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8‘¡àÑ­-
-hsquid:CommentedOutCodeLine@"<This block of commented-out lines of code should be removed.(¹ïÝU8š½Ò­-
-isquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(ßØ²Ã8š½Ò­-
-zsquid:S1488U"\Immediately return this expression instead of assigning it to the temporary variable "date".(òÂà8‘¡àÑ­-
+squid:S106E"9Replace this use of System.out or System.err by a logger.(úùê–ûÿÿÿÿ8‘¡àÑ­-
+zsquid:S1488^"\Immediately return this expression instead of assigning it to the temporary variable "date".(òÂà8‘¡àÑ­-
+Fsquid:S1148a"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8‘¡àÑ­-
+hsquid:CommentedOutCodeLineI"<This block of commented-out lines of code should be removed.(¹ïÝU8š½Ò­-
+isquid:CommentedOutCodeLineL"<This block of commented-out lines of code should be removed.(ßØ²Ã8š½Ò­-

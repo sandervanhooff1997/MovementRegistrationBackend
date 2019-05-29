@@ -86,4 +86,19 @@ public class MovementService {
             System.err.println("Error: " + e.getMessage());
         }
     }
+
+    public List<Movement> getMovementsByMonth(Long monthIndex) {
+
+        List<Movement> allMovements = movementRepository.getAllMovements();
+        List<Movement> movementsByMonth = new ArrayList<>();
+
+        for (Movement m : allMovements){
+            System.out.println(m.getDate().getMonth());
+            if (m.getDate().getMonth() == monthIndex){
+                movementsByMonth.add(m);
+            }
+        }
+
+        return movementsByMonth;
+    }
 }
