@@ -22,7 +22,9 @@ public class Movement {
 
     private Date date;
 
-    private Long carTracker_id;
+    private Long carTrackerId;
+
+    private Double distance;
 
 
     public Movement() {
@@ -30,7 +32,7 @@ public class Movement {
 
     public Movement(String serialNumber, Long carTracker) {
         this.serialNumber = serialNumber;
-        this.carTracker_id = carTracker;
+        this.carTrackerId = carTracker;
     }
 
     public Movement(String serialNumber) {
@@ -85,12 +87,20 @@ public class Movement {
         this.date = date;
     }
 
-    public Long getCarTracker_id() {
-        return carTracker_id;
+    public Long getCarTrackerId() {
+        return carTrackerId;
     }
 
-    public void setCarTracker_id(Long carTracker_id) {
-        this.carTracker_id = carTracker_id;
+    public void setCarTrackerId(Long carTracker_id) {
+        this.carTrackerId = carTracker_id;
+    }
+
+    public Double getDistance() {
+        return distance;
+    }
+
+    public void setDistance(Double distance) {
+        this.distance = distance;
     }
 
     @Override
@@ -102,7 +112,8 @@ public class Movement {
                 ", coordinate=" + coordinate +
                 ", authCode='" + authCode + '\'' +
                 ", date=" + date +
-                ", carTracker=" + carTracker_id +
+                ", carTrackerId=" + carTrackerId +
+                ", distance=" + distance +
                 '}';
     }
 }

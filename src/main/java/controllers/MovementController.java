@@ -36,7 +36,7 @@ public class MovementController {
     @Path("/test")
     @Consumes("application/json")
     public Response getTest(){
-        return Response.ok("Hello AJAX AMSTERDAM").build();
+        return Response.ok("Hello update").build();
     }
 
     @GET

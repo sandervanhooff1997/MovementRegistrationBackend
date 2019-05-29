@@ -38,7 +38,7 @@ public class MovementRepository extends BaseRepo {
         try {
             movements = em.createQuery(
                     "select m from Movement m " +
-                            "where m.carTracker_id = :id")
+                            "where m.carTrackerId = :id")
                     .setParameter("id", id)
                     .getResultList();
             return movements;
