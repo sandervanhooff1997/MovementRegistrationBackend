@@ -40,12 +40,20 @@ public class MovementController {
         return Response.ok(movements).build();
     }
 
+    @GET
+    @Path("/month/{monthIndex}/cartracker")
+    @Consumes("application/json")
+    public Response getMovementsByCartrackerAndMonth(@PathParam("monthIndex") Long monthIndex, @QueryParam("id") List<Long> ids){
+        List<Movement> movements = movementService.getMovementsByCartrackerAndMonth(monthIndex, ids);
+        return Response.ok(movements).build();
+    }
+
 
     @GET
     @Path("/test")
     @Consumes("application/json")
     public Response getTest(){
-        return Response.ok("Hello Month").build();
+        return Response.ok("Hello MonthSplit").build();
     }
 
     @GET

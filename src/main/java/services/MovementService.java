@@ -88,17 +88,24 @@ public class MovementService {
     }
 
     public List<Movement> getMovementsByMonth(Long monthIndex) {
+        return sortByMonth(monthIndex, getAll());
+    }
 
-        List<Movement> allMovements = movementRepository.getAllMovements();
+    public List<Movement> sortByMonth(Long monthIndex, List<Movement> movements){
         List<Movement> movementsByMonth = new ArrayList<>();
-
-        for (Movement m : allMovements){
+        for (Movement m : movements){
             System.out.println(m.getDate().getMonth());
             if (m.getDate().getMonth() == monthIndex){
                 movementsByMonth.add(m);
             }
         }
-
         return movementsByMonth;
+    }
+
+    public List<Movement> getMovementsByCartrackerAndMonth(Long monthIndex, List<Long> ids) {
+        List<Movement> movements = sortByMonth(monthIndex, movementRepository.getMovementsByCarTrackers(ids));
+
+        return movements;
+
     }
 }

@@ -9,7 +9,6 @@
     <list default="true" id="603722e4-00d6-42c8-889d-d768d0f84ff6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/MovementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/MovementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/filter/CORS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filter/CORS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/repositories/MovementRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repositories/MovementRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/services/MovementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/MovementService.java" afterDir="false" />
     </list>
@@ -26,7 +25,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/Movement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1049">
+            <state relative-caret-position="1190">
               <caret line="106" column="18" selection-start-line="106" selection-start-column="18" selection-end-line="106" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -38,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/MovementController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+            <state relative-caret-position="295">
+              <caret line="46" column="78" lean-forward="true" selection-start-line="46" selection-start-column="78" selection-end-line="46" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#507#508#0" expanded="true" />
@@ -49,24 +48,33 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/repositories/MovementRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="142">
+              <caret line="48" column="62" selection-start-line="48" selection-start-column="62" selection-end-line="48" selection-end-column="62" />
+              <folding>
+                <element signature="method#saveMovements#0;class#MovementRepository#0" />
+                <element signature="method#getAllMovements#0;class#MovementRepository#0" />
+                <element signature="method#getMovementsByPeriod#0;class#MovementRepository#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/services/MovementService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="101" column="32" lean-forward="true" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
+            <state relative-caret-position="301">
+              <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1667#1668#0" expanded="true" />
-                <element signature="e#1737#1738#0" expanded="true" />
+                <element signature="method#saveMovements#0;class#MovementService#0" />
+                <element signature="method#checkAuthcode#0;class#MovementService#0" />
+                <element signature="method#logMissingSerialnumber#0;class#MovementService#0" />
+                <element signature="method#getMovementsByPeriod#0;class#MovementService#0" />
+                <element signature="method#logMovement#0;class#MovementService#0" />
+                <element signature="method#sortByMonth#0;class#MovementService#0" />
               </folding>
             </state>
           </provider>
@@ -106,9 +114,9 @@
         <option value="$PROJECT_DIR$/src/main/java/repositories/CartrackerRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Movement.java" />
         <option value="$PROJECT_DIR$/src/main/java/filter/CORS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/repositories/MovementRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/MovementController.java" />
         <option value="$PROJECT_DIR$/src/main/java/services/MovementService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/repositories/MovementRepository.java" />
       </list>
     </option>
   </component>
@@ -130,7 +138,7 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="135" />
     <option name="y" value="130" />
     <option name="width" value="1615" />
@@ -141,7 +149,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -210,13 +217,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559138537948" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SimulationSystemClient" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -501,11 +509,13 @@
       <workItem from="1558950180504" duration="989000" />
       <workItem from="1558960574577" duration="386000" />
       <workItem from="1559053045755" duration="6192000" />
+      <workItem from="1559153443856" duration="3222000" />
+      <workItem from="1559323678325" duration="2901000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68186000" />
+    <option name="totallyTimeSpent" value="74309000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -520,7 +530,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19060403" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1624161" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Persistence" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -534,7 +544,7 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="SonarLint" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.70469797" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.70469797" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -672,7 +682,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Movement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1049">
+        <state relative-caret-position="1190">
           <caret line="106" column="18" selection-start-line="106" selection-start-column="18" selection-end-line="106" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -680,10 +690,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/MovementRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="48" column="62" selection-start-line="48" selection-start-column="62" selection-end-line="48" selection-end-column="62" />
+          <folding>
+            <element signature="method#saveMovements#0;class#MovementRepository#0" />
+            <element signature="method#getAllMovements#0;class#MovementRepository#0" />
+            <element signature="method#getMovementsByPeriod#0;class#MovementRepository#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/MovementController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+        <state relative-caret-position="295">
+          <caret line="46" column="78" lean-forward="true" selection-start-line="46" selection-start-column="78" selection-end-line="46" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#507#508#0" expanded="true" />
@@ -694,20 +716,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/services/MovementService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="101" column="32" lean-forward="true" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
+        <state relative-caret-position="301">
+          <caret line="108" lean-forward="true" selection-start-line="108" selection-end-line="108" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1667#1668#0" expanded="true" />
-            <element signature="e#1737#1738#0" expanded="true" />
+            <element signature="method#saveMovements#0;class#MovementService#0" />
+            <element signature="method#checkAuthcode#0;class#MovementService#0" />
+            <element signature="method#logMissingSerialnumber#0;class#MovementService#0" />
+            <element signature="method#getMovementsByPeriod#0;class#MovementService#0" />
+            <element signature="method#logMovement#0;class#MovementService#0" />
+            <element signature="method#sortByMonth#0;class#MovementService#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/repositories/MovementRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
         </state>
       </provider>
     </entry>

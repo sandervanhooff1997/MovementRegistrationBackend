@@ -31,8 +31,6 @@ public class MovementRepository extends BaseRepo {
         }
     }
 
-
-
     public List<Movement> getMovementsByCarTracker (Long id) {
         List<Movement> movements;
         try {
@@ -40,6 +38,21 @@ public class MovementRepository extends BaseRepo {
                     "select m from Movement m " +
                             "where m.carTrackerId = :id")
                     .setParameter("id", id)
+                    .getResultList();
+            return movements;
+        } catch (Exception ex){
+            ex.printStackTrace();
+            return null;
+        }
+    }
+
+    public List<Movement> getMovementsByCarTrackers (List<Long> ids) {
+        List<Movement> movements;
+        try {
+            movements = em.createQuery(
+                    "select m from Movement m " +
+                            "where m.carTrackerId IN :ids")
+                    .setParameter("ids", ids)
                     .getResultList();
             return movements;
         } catch (Exception ex){
