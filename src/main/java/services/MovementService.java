@@ -66,7 +66,9 @@ public class MovementService {
     }
 
     public List<Movement> getMovementsByCartracker(Long id) {
-        return movementRepository.getMovementsByCarTracker(id);
+        List<Movement> movements = movementRepository.getMovementsByCarTracker(id);
+        sortByDate(movements);
+        return movements;
     }
 
     public List<Movement> getMovementsByPeriod(Date start, Date end) {
@@ -100,6 +102,14 @@ public class MovementService {
             }
         }
         return movementsByMonth;
+    }
+
+    public void sortByDate(List<Movement> movements){
+        Collections.sort(movements, new Comparator<Movement>() {
+            public int compare(Movement o1, Movement o2) {
+                return o1.getDate().compareTo(o2.getDate());
+            }
+        });
     }
 
     public List<Movement> getMovementsByCartrackerAndMonth(Long monthIndex, List<Long> ids) {
